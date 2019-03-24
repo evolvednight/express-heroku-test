@@ -16,5 +16,6 @@
     "start:prod": "cd server && yarn start:prod",
     "clean": "concurrently \"rimraf node_modules\" \"cd client && rimraf node_modules build\" \"cd server && rimraf node_modules build\"",
     "heroku-postbuild": "yarn build"
-  }
+  },
+  "heroku-run-build-script": true
 }
